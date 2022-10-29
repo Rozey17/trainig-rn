@@ -43,7 +43,7 @@ function BottomTabNavigator() {
         options={{
           tabBarIcon: () => <Foundation name="home" size={24} color="black" />,
           tabBarShowLabel: false,
-          // headerShown: false,
+          headerShown: false,
         }}
       />
       <BottomTab.Screen
