@@ -4,36 +4,29 @@ import { s } from "react-native-wind";
 
 const TestSection = () => {
   return (
-    <ScrollView
-      showsHorizontalScrollIndicator={false}
-      horizontal
-      contentContainerStyle={{
-        justifyContent: "space-between",
-        padding: 10,
-      }}
-    >
-      {/* <View style={s`flex-row justify-between`}></View> */}
+    <View style={s`flex-row justify-between px-3`}>
       <TouchableOpacity>
-        <View style={s` p-5 bg-blue-700 `}>
-          <Text style={s`text-white font-bold capitalize`}>Hello</Text>
+        <View style={s` py-5`}>
+          <Text style={s` font-bold capitalize`}>Listes Alexa</Text>
         </View>
       </TouchableOpacity>
       <TouchableOpacity>
-        <View style={s` p-5 bg-blue-700 `}>
-          <Text style={s`text-white font-bold capitalize`}>Hello</Text>
+        <View style={s` py-5`}>
+          <Text style={s` font-bold capitalize`}>Prime</Text>
         </View>
       </TouchableOpacity>
       <TouchableOpacity>
-        <View style={s` p-5 bg-blue-700 `}>
-          <Text style={s`text-white font-bold capitalize`}>Hello</Text>
+        <View style={s` py-5`}>
+          <Text style={s` font-bold capitalize`}>Vidéo</Text>
         </View>
       </TouchableOpacity>
       <TouchableOpacity>
-        <View style={s` p-5 bg-blue-700 `}>
-          <Text style={s`text-white font-bold capitalize`}>Hello</Text>
+        <View style={s` py-5`}>
+          <Text style={s` font-bold capitalize`}>Musique</Text>
         </View>
       </TouchableOpacity>
-    </ScrollView>
+    </View>
+    // </ScrollView>
   );
 };
 
