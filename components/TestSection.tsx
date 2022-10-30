@@ -4,7 +4,7 @@ import { s } from "react-native-wind";
 
 const TestSection = () => {
   return (
-    <View style={s`flex-row justify-between px-3`}>
+    <View style={s`flex-row justify-between px-3  `}>
       <TouchableOpacity>
         <View style={s` py-5`}>
           <Text style={s` font-bold capitalize`}>Listes Alexa</Text>

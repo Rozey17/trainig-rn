@@ -8,6 +8,7 @@ import { Foundation } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native";
 import { Feather } from "@expo/vector-icons";
+import ProductScreen from "../screens/ProductScreen";
 const Navigation = () => {
   return (
     <NavigationContainer>
@@ -27,6 +28,12 @@ function RootNavigator() {
         component={BottomTabNavigator}
         // hide header
         options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Product"
+        component={ProductScreen}
+        // hide header
+        // options={{ headerShown: false }}
       />
     </Stack.Navigator>
   );
