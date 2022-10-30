@@ -46,6 +46,7 @@ function BottomTabNavigator() {
     <BottomTab.Navigator>
       <BottomTab.Screen
         name="Home"
+        //@ts-ignore
         component={Homescreen}
         options={{
           tabBarIcon: () => <Foundation name="home" size={24} color="black" />,
@@ -55,6 +56,8 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Test"
+        //@ts-ignore
+
         component={Testscreen}
         options={{
           tabBarIcon: () => <Feather name="user" size={24} color="black" />,
@@ -63,6 +66,8 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="cart"
+        //@ts-ignore
+
         component={Testscreen}
         options={{
           tabBarIcon: () => <Ionicons name="cart" size={24} color="black" />,
@@ -71,6 +76,8 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="account"
+        //@ts-ignore
+
         component={Testscreen}
         options={{
           tabBarIcon: () => <Feather name="menu" size={24} color="black" />,
