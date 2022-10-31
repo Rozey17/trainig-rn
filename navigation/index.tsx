@@ -29,13 +29,29 @@ function RootNavigator() {
         // hide header
         options={{ headerShown: false }}
       />
-      <Stack.Screen
+    </Stack.Navigator>
+  );
+}
+
+const HomeStack = createNativeStackNavigator();
+
+function HomeStackScreen() {
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen
+        name="Home"
+        //@ts-ignore
+        component={Homescreen}
+        options={{ headerShown: false }}
+      />
+      <HomeStack.Screen
         name="Product"
+        //@ts-ignore
+
         component={ProductScreen}
-        // hide header
         // options={{ headerShown: false }}
       />
-    </Stack.Navigator>
+    </HomeStack.Navigator>
   );
 }
 
@@ -47,13 +63,14 @@ function BottomTabNavigator() {
       <BottomTab.Screen
         name="Home"
         //@ts-ignore
-        component={Homescreen}
+        component={HomeStackScreen}
         options={{
           tabBarIcon: () => <Foundation name="home" size={24} color="black" />,
           tabBarShowLabel: false,
           headerShown: false,
         }}
       />
+
       <BottomTab.Screen
         name="Test"
         //@ts-ignore
