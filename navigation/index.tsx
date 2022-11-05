@@ -9,6 +9,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import ProductScreen from "../screens/ProductScreen";
+import AccountScreen from "../screens/AccountScreen";
 const Navigation = () => {
   return (
     <NavigationContainer>
@@ -75,10 +76,11 @@ function BottomTabNavigator() {
         name="Test"
         //@ts-ignore
 
-        component={Testscreen}
+        component={AccountScreen}
         options={{
           tabBarIcon: () => <Feather name="user" size={24} color="black" />,
           tabBarShowLabel: false,
+          headerShown: false,
         }}
       />
       <BottomTab.Screen

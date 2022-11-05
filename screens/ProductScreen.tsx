@@ -58,14 +58,14 @@ const ProductScreen = () => {
           {/* <Button title="Ajouter au panier" color="#FFD700" />
           <Button title="Ajouter au panier" color="#FFD700" /> */}
           <TouchableOpacity
-            style={s`bg-yellow-400 rounded-md px-5 py-3 text-center text-lg mt-3`}
+            style={s`bg-yellow-400 rounded-md px-5 py-3 text-center mt-3`}
           >
-            <Text style={s` text-center text-lg`}>Ajouter au panier</Text>
+            <Text style={s` text-center `}>Ajouter au panier</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={s`bg-amber-600 rounded-md px-5 py-3 text-center text-lg mt-3`}
+            style={s`bg-amber-600 rounded-md px-5 py-3 text-center  mt-3`}
           >
-            <Text style={s` text-center text-lg`}>Acheter maintenant</Text>
+            <Text style={s` text-center `}>Acheter maintenant</Text>
           </TouchableOpacity>
         </View>
       </View>
